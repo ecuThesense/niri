@@ -1,0 +1,2 @@
+# niri
+personal niri config
