@@ -1,0 +1,16 @@
+{
+  "Applications": {
+    "/usr/share/applications/firefox-esr.desktop": 2,
+    "/usr/share/applications/fluid.desktop": 1
+  },
+  "Emoji": {
+    "emoji-😆": 1
+  },
+  "Panels": {
+    "cc-tab:network": 1
+  },
+  "Wallpaper": {
+    "/home/pavel/Pictures/debian13.png": 1,
+    "/home/pavel/Pictures/wallhaven.png": 1
+  }
+}

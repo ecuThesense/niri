@@ -1,0 +1,1 @@
+mkdir -p ~/niri-desktop

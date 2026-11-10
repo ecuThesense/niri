@@ -1,0 +1,37 @@
+XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
+XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
+XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
+XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+  XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+
+/* Audio */
+static const char *audiomute[]  = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
+static const char *audiolower[]  = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0.1-", NULL };
+static const char *audioraise[]  = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0.1+", "-l", "1.0", NULL };
+
+static const char *micmute[]  = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SOURCE@", "toggle", NULL };
+static const char *audioplay[]  = { "playerctl", "play-pause", NULL };
+static const char *audiostop[]  = { "playerctl", "stop", NULL };
+static const char *audioprev[]  = { "playerctl", "previous", NULL };
+static const char *audionext[]  = { "playerctl", "next", NULL };
+/* Brightness */
+static const char *brightnessup[]  = { "brightnessctl", "--class=backlight", "set", "+10%", NULL };
+static const char *brightnessdown[]  = { "brightnessctl", "--class=backlight", "set", "10%-", NULL };
+
+static const char *audiomute[]  = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", "&&", "~/dwm/dwm/scripts/statusbar.sh", "--once", NULL };
+static const char *audiolower[]  = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0.1-", "&&", "~/dwm/dwm/scripts/statusbar.sh", "--once", NULL };
+static const char *audioraise[]  = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0.1+", "-l", "1.0", "&&", "~/dwm/dwm/scripts/statusbar.sh", "--once", NULL };
+static const char *micmute[]  = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SOURCE@", "toggle", NULL };
+static const char *audioplay[]  = { "playerctl", "play-pause", NULL };
+static const char *audiostop[]  = { "playerctl", "stop", NULL };
+static const char *audioprev[]  = { "playerctl", "previous", NULL };
+static const char *audionext[]  = { "playerctl", "next", NULL };
+/* Brightness */
+static const char *brightnessup[]  = { "brightnessctl", "--class=backlight", "set", "+10%", NULL };
+static const char *brightnessdown[]  = { "brightnessctl", "--class=backlight", "set", "10%-", NULL };

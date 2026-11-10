@@ -1,0 +1,11 @@
+doas apt install libluajit-5.1-2 libmsgpack-c2 libunibilium4 lua-lpeg neovim-runtime python3-msgpack wl-clipboard libluajit-5.1-common libtree-sitter0.22  libvterm0 lua-luv python3-greenlet python3-pynvim
+
+echo 'export EDITOR=nvim' >> ~/.bashrc
+echo 'export VISUAL=nvim' >> ~/.bashrc
+echo 'export NNN_OPENER=nvim' >> ~/.bashrc
+source ~/.bashrc
+
+echo $EDITOR $VISUAL $NNN_OPENER
+
+doas update-alternatives --install /usr/bin/vi vi /usr/local/bin/nvim 60
+doas update-alternatives --config vi

@@ -1,0 +1,7 @@
+chown root:root /etc/doas.conf && sudo chmod 0400 /etc/doas.conf
+permit persist pavel as root
+doas -s
+apt-cache rdepends --installed sudo
+apt -s remove sudo
+doas apt purge sudo && doas apt autoremove
+complete -F _comp_command doas 2>/dev/null || complete -F _command doas
