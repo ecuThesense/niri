@@ -220,7 +220,8 @@ binds {
    Mod+U hotkey-overlay-title="Lock Screen"                                { spawn-sh "noctalia msg session lock"; }
    // Mod+A hotkey-overlay-title="Run an Application: Hyprpicker"          { spawn "hyprpicker" "-a"; }
    // Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "foot" "-e" "yazi"; }
-   Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "pcmanfm"; }
+   // Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "pcmanfm"; }
+   Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "foot" "-e" "yazi"; }
    Mod+M hotkey-overlay-title="Run an Application: Text Editor"            { spawn "foot" "-e" "nvim"; }
    // Mod+Shift+E hotkey-overlay-title="Run an Application: File Manager"  { spawn "nautilus" "--new-window"; }
    // Mod+Shift+B hotkey-overlay-title="Restart an Application: Waybar"    { spawn-sh "pkill waybar; pkill kded6; waybar &"; }
