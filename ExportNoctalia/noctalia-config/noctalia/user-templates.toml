@@ -1,0 +1,3 @@
+[theme.templates.firefox]
+input_path  = "~/.config/noctalia/templates/firefox.css"
+output_path = "~/.mozilla/firefox/kiqsgi57.default-esr/chrome/noctalia-colors.css"
