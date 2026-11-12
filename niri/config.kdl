@@ -211,18 +211,19 @@ debug {
 binds {
     Mod+P { show-hotkey-overlay; }
     Mod+T hotkey-overlay-title="Open a Terminal"                           { spawn "foot"; }
-    Mod+F hotkey-overlay-title="Run an Applications"                       { spawn-sh "noctalia msg panel-toggle launcher"; }
-//    Mod+Shift+U hotkey-overlay-title="Lock the Screen: hyprlock"         { spawn "hyprlock"; }
-//    Mod+O hotkey-overlay-title="Run an Application: Localsend"           { spawn "localsend_app"; }
+    // Mod+F hotkey-overlay-title="Run an Applications"                       { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+F hotkey-overlay-title="Run an Applications"                       { spawn-sh "~/niri/scripts/app-picker.sh"; }
+    // Mod+Shift+U hotkey-overlay-title="Lock the Screen: hyprlock"         { spawn "hyprlock"; }
+    // Mod+O hotkey-overlay-title="Run an Application: Localsend"           { spawn "localsend_app"; }
    Mod+B hotkey-overlay-title="Run an Application: Firefox"                { spawn-sh "~/niri/scripts/noctalia-browser-launch.sh"; }
    Mod+I hotkey-overlay-title="Run an Application: ManPages"               { spawn-sh "~/niri/scripts/noctalia-manmenu.sh"; }
    Mod+U hotkey-overlay-title="Lock Screen"                                { spawn-sh "noctalia msg session lock"; }
-//    Mod+A hotkey-overlay-title="Run an Application: Hyprpicker"          { spawn "hyprpicker" "-a"; }
+   // Mod+A hotkey-overlay-title="Run an Application: Hyprpicker"          { spawn "hyprpicker" "-a"; }
    // Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "foot" "-e" "yazi"; }
    Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "pcmanfm"; }
    Mod+M hotkey-overlay-title="Run an Application: Text Editor"            { spawn "foot" "-e" "nvim"; }
-//    Mod+Shift+E hotkey-overlay-title="Run an Application: File Manager"  { spawn "nautilus" "--new-window"; }
-//    Mod+Shift+B hotkey-overlay-title="Restart an Application: Waybar"    { spawn-sh "pkill waybar; pkill kded6; waybar &"; }
+   // Mod+Shift+E hotkey-overlay-title="Run an Application: File Manager"  { spawn "nautilus" "--new-window"; }
+   // Mod+Shift+B hotkey-overlay-title="Restart an Application: Waybar"    { spawn-sh "pkill waybar; pkill kded6; waybar &"; }
     XF86AudioRaiseVolume allow-when-locked=true  { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true  { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
     XF86AudioMute        allow-when-locked=true  { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
