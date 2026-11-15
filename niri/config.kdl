@@ -168,6 +168,10 @@ environment {
     MOZ_ENABLE_WAYLAND "1"
 }
 
+xwayland-satellite {
+    path "xwayland-satellite"
+}
+
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // screenshot-path null
 // https://yalter.github.io/niri/Configuration:-Animations
