@@ -1,0 +1,39 @@
+{
+  "Applications": {
+    "/home/pavel/.local/share/applications/start-tor-browser.desktop": 2,
+    "/usr/local/share/applications/emacsclient.desktop": 2,
+    "/usr/share/applications/Alacritty.desktop": 3,
+    "/usr/share/applications/debian-uxterm.desktop": 1,
+    "/usr/share/applications/debian-xterm.desktop": 1,
+    "/usr/share/applications/firefox-esr.desktop": 21,
+    "/usr/share/applications/fluid.desktop": 1,
+    "/usr/share/applications/foot.desktop": 7,
+    "/usr/share/applications/kitty.desktop": 3,
+    "/usr/share/applications/nwg-displays.desktop": 2,
+    "/usr/share/applications/org.gnome.Nautilus.desktop": 2,
+    "/usr/share/applications/pcmanfm.desktop": 4,
+    "/usr/share/applications/synaptic.desktop": 1
+  },
+  "Emoji": {
+    "emoji-😆": 1
+  },
+  "Panels": {
+    "cc-tab:network": 1
+  },
+  "Wallpaper": {
+    "/home/pavel/Pictures/Wallpapers/blue-abstract-3840x2160-25121.jpg": 1,
+    "/home/pavel/Pictures/Wallpapers/cherry-blossom-3840x2160-20436.jpg": 1,
+    "/home/pavel/Pictures/Wallpapers/debian13.png": 1,
+    "/home/pavel/Pictures/Wallpapers/fluid-abstract-art-3840x2160-25927.jpg": 6,
+    "/home/pavel/Pictures/Wallpapers/gnome.jpg": 1,
+    "/home/pavel/Pictures/Wallpapers/green-abstract-3840x2160-21891.png": 2,
+    "/home/pavel/Pictures/Wallpapers/imac-2023-5k-stock-3840x2160-13250.jpg": 2,
+    "/home/pavel/Pictures/Wallpapers/transneutral-lgbtq-3840x2160-11899.jpg": 1,
+    "/home/pavel/Pictures/Wallpapers/wallhaven.png": 4,
+    "/home/pavel/Pictures/blue-abstract-3840x2160-25121.jpg": 1,
+    "/home/pavel/Pictures/debian13.png": 1,
+    "/home/pavel/Pictures/geometric-purple-3840x2160-24844.jpg": 1,
+    "/home/pavel/Pictures/golden-stripes-neon-3840x2160-25123.jpg": 1,
+    "/home/pavel/Pictures/wallhaven.png": 2
+  }
+}

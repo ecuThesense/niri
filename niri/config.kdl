@@ -153,6 +153,21 @@ hotkey-overlay {
     skip-at-startup
 }
 prefer-no-csd
+
+environment {
+    // Qt applications
+    QT_QPA_PLATFORM "wayland"
+
+    // GTK applications
+    GDK_BACKEND "wayland,x11"
+
+    // SDL applications
+    SDL_VIDEODRIVER "wayland"
+
+    // Firefox
+    MOZ_ENABLE_WAYLAND "1"
+}
+
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // screenshot-path null
 // https://yalter.github.io/niri/Configuration:-Animations
