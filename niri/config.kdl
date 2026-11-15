@@ -138,6 +138,7 @@ switch-events {
 
 // spawn-sh-at-startup "pkill kded6"
 spawn-at-startup "noctalia"
+spawn-at-startup "xwayland-satellite"
 spawn-sh-at-startup "dbus-update-activation-environment --systemd --all"
 // spawn-sh-at-startup "systemctl --user start hyprpolkitagent"
 spawn-sh-at-startup "systemctl --user daemon-reload"
@@ -156,10 +157,10 @@ prefer-no-csd
 
 environment {
     // Qt applications
-    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORM "x11,wayland"
 
     // GTK applications
-    GDK_BACKEND "wayland,x11"
+    GDK_BACKEND "x11,wayland"
 
     // SDL applications
     SDL_VIDEODRIVER "wayland"
@@ -172,8 +173,8 @@ xwayland-satellite {
     path "xwayland-satellite"
 }
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-// screenshot-path null
+// screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path null
 // https://yalter.github.io/niri/Configuration:-Animations
 animations {
     // off
@@ -238,8 +239,7 @@ binds {
    Mod+I hotkey-overlay-title="Run an Application: ManPages"               { spawn-sh "~/niri/scripts/noctalia-manmenu.sh"; }
    Mod+U hotkey-overlay-title="Lock Screen"                                { spawn-sh "noctalia msg session lock"; }
    // Mod+A hotkey-overlay-title="Run an Application: Hyprpicker"          { spawn "hyprpicker" "-a"; }
-   // Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "foot" "-e" "yazi"; }
-   // Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "pcmanfm"; }
+   // Mod+E hotkey-overlay-title="Run an Application: File Manager"        { spawn "pcmanfm"; }
    Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "foot" "-e" "yazi"; }
    Mod+M hotkey-overlay-title="Run an Application: Text Editor"            { spawn "foot" "-e" "nvim"; }
    // Mod+Shift+E hotkey-overlay-title="Run an Application: File Manager"  { spawn "nautilus" "--new-window"; }
