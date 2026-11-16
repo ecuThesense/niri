@@ -381,10 +381,10 @@ transition = [ "disc" ]
     interval_seconds = 9000
 
     [wallpaper.default]
-    path = "/home/pavel/niri/Wallpapers/colorful-circles-3840x2160-12662.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.last]
-    path = "/home/pavel/niri/Wallpapers/colorful-circles-3840x2160-12662.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.monitor.DP-3]
     fill_color = "primary"
@@ -399,13 +399,13 @@ transition = [ "disc" ]
     fill_color = "primary"
 
     [wallpaper.monitors.DP-3]
-    path = "/home/pavel/niri/Wallpapers/colorful-circles-3840x2160-12662.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.monitors.DP-4]
-    path = "/home/pavel/niri/Wallpapers/colorful-circles-3840x2160-12662.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.monitors.DP-5]
-    path = "/home/pavel/niri/Wallpapers/colorful-circles-3840x2160-12662.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.monitors.DP-6]
     path = "/home/pavel/niri/Wallpapers/brown-background-3840x2160-26436.jpg"
@@ -417,7 +417,7 @@ transition = [ "disc" ]
     path = "/home/pavel/niri/Wallpapers/brown-background-3840x2160-26436.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/pavel/niri/Wallpapers/colorful-circles-3840x2160-12662.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"

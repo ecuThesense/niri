@@ -139,10 +139,11 @@ switch-events {
 // spawn-sh-at-startup "pkill kded6"
 spawn-at-startup "noctalia"
 spawn-at-startup "xwayland-satellite"
-spawn-sh-at-startup "dbus-update-activation-environment --systemd --all"
+// spawn-sh-at-startup "dbus-update-activation-environment --systemd --all"
+spawn-sh-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=niri && systemctl --user restart xdg-desktop-portal xdg-desktop-portal-gtk"
 // spawn-sh-at-startup "systemctl --user start hyprpolkitagent"
 spawn-sh-at-startup "systemctl --user daemon-reload"
-spawn-sh-at-startup "systemctl --user restart xdg-desktop-portal xdg-desktop-portal-gtk"
+// spawn-sh-at-startup "systemctl --user restart xdg-desktop-portal xdg-desktop-portal-gtk"
 // spawn-at-startup "hyprpaper"
 // spawn-at-startup "hyprsunset"
 // spawn-at-startup "mako"
@@ -157,16 +158,18 @@ prefer-no-csd
 
 environment {
     // Qt applications
-    QT_QPA_PLATFORM "x11,wayland"
+    // QT_QPA_PLATFORM "x11,wayland"
 
     // GTK applications
-    GDK_BACKEND "x11,wayland"
+    // GDK_BACKEND "x11,wayland"
 
+    GTK_USE_PORTAL "1"
+    MOZ_ENABLE_WAYLAND "1"
     // SDL applications
     SDL_VIDEODRIVER "wayland"
 
     // Firefox
-    MOZ_ENABLE_WAYLAND "1"
+    // MOZ_ENABLE_WAYLAND "1"
 }
 
 xwayland-satellite {
