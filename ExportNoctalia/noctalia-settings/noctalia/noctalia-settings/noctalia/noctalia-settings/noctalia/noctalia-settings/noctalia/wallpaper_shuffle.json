@@ -1,0 +1,36 @@
+{
+  "scopes": {
+    "global": {
+      "/home/pavel/Pictures/Wallpapers/": [
+        "/home/pavel/Pictures/Wallpapers/dark-blue-circles-3840x2160-12670.jpg",
+        "/home/pavel/Pictures/Wallpapers/brown-background-3840x2160-26436.jpg",
+        "/home/pavel/Pictures/Wallpapers/purple-abstract-3840x2160-24770.jpg",
+        "/home/pavel/Pictures/Wallpapers/brown-abstract-3840x2160-26733.jpg",
+        "/home/pavel/Pictures/Wallpapers/transneutral-lgbtq-3840x2160-11899.jpg",
+        "/home/pavel/Pictures/Wallpapers/glacial-blue-3840x2160-26358.jpg",
+        "/home/pavel/Pictures/Wallpapers/debian13.png",
+        "/home/pavel/Pictures/Wallpapers/imac-2023-5k-stock-3840x2160-13250.jpg",
+        "/home/pavel/Pictures/Wallpapers/orange-abstract-3840x2160-12052.jpg",
+        "/home/pavel/Pictures/Wallpapers/fluid-abstract-art-3840x2160-25927.jpg",
+        "/home/pavel/Pictures/Wallpapers/blue-abstract-3840x2160-25121.jpg",
+        "/home/pavel/Pictures/Wallpapers/purple-leaves-macro-3840x2160-17513.jpg",
+        "/home/pavel/Pictures/Wallpapers/soft-gradient-3840x2160-20099.jpg",
+        "/home/pavel/Pictures/Wallpapers/green-abstract-3840x2160-21891.png",
+        "/home/pavel/Pictures/Wallpapers/colorful-circles-3840x2160-12662.jpg",
+        "/home/pavel/Pictures/Wallpapers/golden-stripes-neon-3840x2160-25123.jpg"
+      ],
+      "/home/pavel/niri/Wallpapers/": [
+        "/home/pavel/niri/Wallpapers/blue-abstract-3840x2160-25121.jpg",
+        "/home/pavel/niri/Wallpapers/wallhaven-wy96zp_3840x2160.png",
+        "/home/pavel/niri/Wallpapers/wallhaven-qrpygl_3840x2160.png",
+        "/home/pavel/niri/Wallpapers/brown-background-3840x2160-26436.jpg",
+        "/home/pavel/niri/Wallpapers/wallhaven-y8kryl_3840x2160.png",
+        "/home/pavel/niri/Wallpapers/wallhaven-qzj79q_3840x2160.png",
+        "/home/pavel/niri/Wallpapers/purple-gradient-3840x2160-22798.png",
+        "/home/pavel/niri/Wallpapers/wallhaven-l8mlyy_3840x2160.png",
+        "/home/pavel/niri/Wallpapers/purple-leaves-macro-3840x2160-17513.jpg"
+      ]
+    }
+  },
+  "version": 2
+}

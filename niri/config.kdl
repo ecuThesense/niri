@@ -373,7 +373,8 @@ binds {
     Mod+Z            { toggle-column-tabbed-display; }
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
-    Print            { screenshot; }
+    // Print            { screenshot; }
+    Print            { spawn-sh "noctalia msg screenshot-region --annotate"; }
     Ctrl+Print       { screenshot-screen; }
     Alt+Print        { screenshot-window; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }

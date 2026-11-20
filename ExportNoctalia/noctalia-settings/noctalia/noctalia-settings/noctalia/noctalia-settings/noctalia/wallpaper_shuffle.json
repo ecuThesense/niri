@@ -1,34 +1,45 @@
 {
   "scopes": {
     "global": {
-      "/home/pavel/Pictures/Wallpapers/": [
-        "/home/pavel/Pictures/Wallpapers/dark-blue-circles-3840x2160-12670.jpg",
-        "/home/pavel/Pictures/Wallpapers/brown-background-3840x2160-26436.jpg",
-        "/home/pavel/Pictures/Wallpapers/purple-abstract-3840x2160-24770.jpg",
-        "/home/pavel/Pictures/Wallpapers/brown-abstract-3840x2160-26733.jpg",
-        "/home/pavel/Pictures/Wallpapers/transneutral-lgbtq-3840x2160-11899.jpg",
-        "/home/pavel/Pictures/Wallpapers/glacial-blue-3840x2160-26358.jpg",
-        "/home/pavel/Pictures/Wallpapers/debian13.png",
-        "/home/pavel/Pictures/Wallpapers/imac-2023-5k-stock-3840x2160-13250.jpg",
-        "/home/pavel/Pictures/Wallpapers/orange-abstract-3840x2160-12052.jpg",
-        "/home/pavel/Pictures/Wallpapers/fluid-abstract-art-3840x2160-25927.jpg",
-        "/home/pavel/Pictures/Wallpapers/blue-abstract-3840x2160-25121.jpg",
-        "/home/pavel/Pictures/Wallpapers/purple-leaves-macro-3840x2160-17513.jpg",
-        "/home/pavel/Pictures/Wallpapers/soft-gradient-3840x2160-20099.jpg",
-        "/home/pavel/Pictures/Wallpapers/green-abstract-3840x2160-21891.png",
-        "/home/pavel/Pictures/Wallpapers/colorful-circles-3840x2160-12662.jpg",
-        "/home/pavel/Pictures/Wallpapers/golden-stripes-neon-3840x2160-25123.jpg"
+      "/home/ecuthesense/Pictures/Wallpapers": [
+        "/home/ecuthesense/Pictures/Wallpapers/red-leaves-3840x2160-17494.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/fluid-abstract-art-3840x2160-25927.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/translucent-floral-3840x2160-27323.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/golden-stripes-neon-3840x2160-25123.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/wallhaven-mddxlm_2560x1440.png",
+        "/home/ecuthesense/Pictures/Wallpapers/glossy-green-3840x2160-25334.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/wallhaven-kwwrk1_2560x1440.png",
+        "/home/ecuthesense/Pictures/Wallpapers/purple-abstract-3840x2160-24770.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/wallhaven.png",
+        "/home/ecuthesense/Pictures/Wallpapers/gnome.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/wallhaven-wyj8x7_2560x1440.png",
+        "/home/ecuthesense/Pictures/Wallpapers/sage-green-abstract-3840x2160-26355.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/glacial-blue-3840x2160-26358.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/google-pixel-9a-3840x2160-19236.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/abstract-layers-3840x2160-22799.png",
+        "/home/ecuthesense/Pictures/Wallpapers/blue-abstract-blue-3840x2160-25126.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/dark-blue-circles-3840x2160-12670.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/vibrant-fluid-3840x2160-25900.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/light-blue-abstract-3840x2160-23153.jpg",
+        "/home/ecuthesense/Pictures/Wallpapers/blue-abstract-3840x2160-25121.jpg"
       ],
-      "/home/pavel/niri/Wallpapers/": [
-        "/home/pavel/niri/Wallpapers/blue-abstract-3840x2160-25121.jpg",
-        "/home/pavel/niri/Wallpapers/wallhaven-wy96zp_3840x2160.png",
-        "/home/pavel/niri/Wallpapers/wallhaven-qrpygl_3840x2160.png",
-        "/home/pavel/niri/Wallpapers/brown-background-3840x2160-26436.jpg",
-        "/home/pavel/niri/Wallpapers/wallhaven-y8kryl_3840x2160.png",
-        "/home/pavel/niri/Wallpapers/wallhaven-qzj79q_3840x2160.png",
-        "/home/pavel/niri/Wallpapers/purple-gradient-3840x2160-22798.png",
-        "/home/pavel/niri/Wallpapers/wallhaven-l8mlyy_3840x2160.png",
-        "/home/pavel/niri/Wallpapers/purple-leaves-macro-3840x2160-17513.jpg"
+      "/home/ecuthesense/dwm/dwm/Wallpapers": [
+        "/home/ecuthesense/dwm/dwm/Wallpapers/purple-leaves-macro-3840x2160-17513.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/brown-background-3840x2160-26436.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-qrpygl_3840x2160.png",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/purple-gradient-3840x2160-22798.png",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/brown-abstract-3840x2160-26733.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/sage-green-abstract-3840x2160-26354.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-l8mlyy_3840x2160.png",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/purple-abstract-3840x2160-24770.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-qzj79q_3840x2160.png",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/abstract-background-3500x2200-11676.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/geometric-purple-3840x2160-24844.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-q68y5q_3840x2160.png",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-85m6oj_3840x2160.png",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/blue-abstract-3840x2160-25121.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/dark-blue-circles-3840x2160-12670.jpg",
+        "/home/ecuthesense/dwm/dwm/Wallpapers/colorful-circles-3840x2160-12662.jpg"
       ]
     }
   },

@@ -1,12 +1,13 @@
 config_version = 15
 
 [backdrop]
-blur_intensity = 0.11999999731779099
+blur_intensity = 0.13999999687075615
+tint_intensity = 0.36999999172985554
 
 [bar.default]
 background_opacity = 0.84999998100101948
 border = "primary"
-center = [ "media" ]
+center = [ "session", "clock" ]
 color = "primary"
 end = [
     "keyboard_layout",
@@ -18,19 +19,24 @@ end = [
     "volume",
     "brightness",
     "battery",
-    "control-center",
-    "session",
-    "clock",
     "notifications"
 ]
+font_scale = 1.1499999817460775
 font_weight = 700
 icon_color = "primary"
-scale = 1.5000000149011612
-start = [ "launcher", "wallpaper", "workspaces", "taskbar" ]
+scale = 1.2000000104308128
+start = [ "wallpaper", "workspaces", "taskbar" ]
 widget_spacing = 10
 
-[calendar]
-enabled = true
+[battery]
+warning_threshold = 15
+
+[brightness]
+minimum_brightness = 0.19999999552965164
+sync_all_monitors = true
+
+[control_center.calendar]
+show_events_card = false
 
 [[control_center.shortcuts]]
 type = "clipboard"
@@ -80,6 +86,9 @@ transition = [ "disc" ]
 enabled = true
 schema_version = 2
 widget_order = [
+    "lockscreen-login-box@DP-6",
+    "lockscreen-login-box@DP-7",
+    "lockscreen-login-box@DP-8",
     "lockscreen-login-box@eDP-1",
     "lockscreen-login-box@DP-3",
     "lockscreen-login-box@DP-4",
@@ -174,11 +183,92 @@ widget_order = [
         show_unlock_hint = true
         show_weather = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-6"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-6"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-6".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-7"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-7"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-7".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-8"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-8"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-8".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 196.0
     box_width = 720.0
     cx = 960.0
-    cy = 874.0
+    cy = 890.0
     output = "eDP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -202,21 +292,27 @@ widget_order = [
         show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 160.0
-    box_width = 368.0
+    box_height = 176.0
+    box_width = 416.0
     cx = 960.0
-    cy = 204.0
+    cy = 212.0
     output = "eDP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.0
     type = "clock"
 
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background_color = "surface"
+        background_opacity = 0.0
+        clock_style = "digital"
+        color = "primary"
+
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
-    box_height = 368.0
-    box_width = 352.0
+    box_height = 432.0
+    box_width = 384.0
     cx = 960.0
-    cy = 492.0
+    cy = 508.0
     output = "eDP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -224,6 +320,7 @@ widget_order = [
     type = "calendar"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = true
         show_events = false
 
 [nightlight]
@@ -245,52 +342,49 @@ auto_update = "official"
     name = "community"
 
 [shell]
-app_icon_color = "on_secondary"
 corner_radius_scale = 2.0
-font_family = "DejaVu Sans Mono"
+font_family = "AdwaitaMono Nerd Font"
 niri_overview_type_to_launch_enabled = true
+password_style = "random"
 
     [shell.panel]
     clipboard_placement = "attached"
-    launcher_placement = "attached"
     open_near_click_clipboard = true
     open_near_click_control_center = true
     open_near_click_launcher = true
     open_near_click_session = true
     open_near_click_wallpaper = true
     polkit_placement = "attached"
-    transparency_mode = "glass"
 
-[system.monitor]
-enabled = false
+    [shell.screenshot]
+    confirm_region = true
 
 [theme]
 builtin = "Tokyo-Night"
 community_palette = "Oxocarbon"
-custom_palette = "wallhaven-mc"
+custom_palette = "fluid-abstract-art-3840x2160-25927-vib"
 mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "vibrant"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "foot", "niri" ]
+    builtin_ids = [ "foot", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
     enable_community_templates = false
 
 [wallpaper]
-directory = "/home/ecuthesense/dwm/dwm/Wallpapers"
+directory = "/home/pavel/niri/Wallpapers/"
 fill_color = "primary"
 transition = [ "disc" ]
-transition_on_startup = true
 
     [wallpaper.automation]
     enabled = true
     interval_seconds = 9000
 
     [wallpaper.default]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/purple-leaves-macro-3840x2160-17513.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.last]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/purple-leaves-macro-3840x2160-17513.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.monitor.DP-3]
     fill_color = "primary"
@@ -305,16 +399,25 @@ transition_on_startup = true
     fill_color = "primary"
 
     [wallpaper.monitors.DP-3]
-    path = "/home/pavel/Pictures/wallhaven.png"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.monitors.DP-4]
-    path = "/home/pavel/Pictures/wallhaven.png"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.monitors.DP-5]
-    path = "/home/pavel/Pictures/wallhaven.png"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
+
+    [wallpaper.monitors.DP-6]
+    path = "/home/pavel/niri/Wallpapers/brown-background-3840x2160-26436.jpg"
+
+    [wallpaper.monitors.DP-7]
+    path = "/home/pavel/niri/Wallpapers/brown-background-3840x2160-26436.jpg"
+
+    [wallpaper.monitors.DP-8]
+    path = "/home/pavel/niri/Wallpapers/brown-background-3840x2160-26436.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/purple-leaves-macro-3840x2160-17513.jpg"
+    path = "/home/pavel/niri/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -329,14 +432,8 @@ enabled = false
 display = "icon_only"
 min_length = 0
 
-[widget.battery]
-show_label = false
-
-[widget.bluetooth]
-enabled = false
-
-[widget.brightness]
-show_label = false
+[widget.clock]
+format = "{:%H:%M %A}"
 
 [widget.control-center]
 enabled = false
@@ -344,33 +441,17 @@ enabled = false
 [widget.keyboard_layout]
 show_glyph = false
 
-[widget.launcher]
-enabled = false
-
 [widget.media]
 art_size = 26
 color = "primary"
-enabled = false
 hide_when_no_media = true
 icon_color = "primary"
 min_length = 0
 show_progress = true
 
-[widget.network]
-show_label = false
-
 [widget.session]
 enabled = false
 
 [widget.sysmon]
-enabled = false
 stat = "ram_used"
 visualization = "none"
-
-[widget.tray]
-color = "primary"
-drawer = true
-icon_color = "primary"
-
-[widget.volume]
-show_label = false
