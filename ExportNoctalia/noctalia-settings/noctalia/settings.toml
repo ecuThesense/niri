@@ -29,6 +29,11 @@ scale = 1.5000000149011612
 start = [ "launcher", "wallpaper", "workspaces", "taskbar" ]
 widget_spacing = 10
 
+[brightness]
+enable_scheduled_brightness = true
+scheduled_day_brightness = 0.97999997809529305
+scheduled_night_brightness = 0.89999997988343239
+
 [calendar]
 enabled = true
 
@@ -75,6 +80,10 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     action = "screen_off"
     enabled = true
     timeout = 660.0
+
+[location]
+sunrise = "8:00"
+sunset = "18:00"
 
 [lockscreen]
 transition = [ "disc" ]
@@ -258,8 +267,10 @@ widget_order = [
         show_events = false
 
 [nightlight]
-temperature_day = 8500
-temperature_night = 8500
+enabled = true
+force = true
+temperature_day = 6700
+temperature_night = 4900
 
 [plugins]
 auto_update = "official"
@@ -283,7 +294,6 @@ niri_overview_type_to_launch_enabled = true
 
     [shell.panel]
     clipboard_placement = "attached"
-    launcher_placement = "attached"
     open_near_click_clipboard = true
     open_near_click_control_center = true
     open_near_click_launcher = true
@@ -318,10 +328,10 @@ transition_on_startup = true
     interval_seconds = 9000
 
     [wallpaper.default]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven.png"
+    path = "/home/ecuthesense/dwm/dwm/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.last]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven.png"
+    path = "/home/ecuthesense/dwm/dwm/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [wallpaper.monitor.DP-3]
     fill_color = "primary"
@@ -348,7 +358,7 @@ transition_on_startup = true
     path = "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-wy96zp_3840x2160.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven.png"
+    path = "/home/ecuthesense/dwm/dwm/Wallpapers/lilac-dark-blue-5k-3840x2160-20506.jpg"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"

@@ -1,3 +1,5 @@
+doas apt install nnn
+
 mkdir -p ~/niri-desktop
 
 cp -r ~/niri/niri/ ~/.config/
