@@ -7,3 +7,8 @@ mouse_events = ["click", "scroll", "touch", "move", "drag"]
 
 [preview]
 image_quality = 50
+
+[opener]
+edit = [
+  { run = 'nvim "%s"', block = true, desc = "nvim", for = "unix" },
+]
