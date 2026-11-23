@@ -148,6 +148,7 @@ spawn-sh-at-startup "systemctl --user daemon-reload"
 // spawn-at-startup "hyprsunset"
 // spawn-at-startup "mako"
 spawn-at-startup "nm-applet" "--indicator"
+spawn-at-startup "nautilus" "--gapplication-service"
 spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
 // spawn-at-startup "vicinae" "server"
 // spawn-at-startup "waybar"
@@ -242,8 +243,8 @@ binds {
    Mod+I hotkey-overlay-title="Run an Application: ManPages"                     { spawn-sh "~/niri/scripts/noctalia-manmenu.sh"; }
    Mod+U hotkey-overlay-title="Lock Screen"                                      { spawn-sh "noctalia msg session lock"; }
    // Mod+A hotkey-overlay-title="Run an Application: Hyprpicker"                 { spawn "hyprpicker" "-a"; }
-   Mod+Shift+E hotkey-overlay-title="Run an Application: File Manager"                 { spawn "pcmanfm"; }
-   Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"  { spawn "foot" "-e" "yazi"; }
+   Mod+Shift+E hotkey-overlay-title="Run an Application: File Manager"           { spawn-sh "GDK_BACKEND=x11 nautilus --new-window"; }
+   Mod+E hotkey-overlay-title="Run an Application: File Manager Terminal"        { spawn "foot" "-e" "yazi"; }
    Mod+M hotkey-overlay-title="Run an Application: Text Editor"                  { spawn "foot" "-e" "nvim"; }
    // Mod+Shift+E hotkey-overlay-title="Run an Application: File Manager"         { spawn "nautilus" "--new-window"; }
    // Mod+Shift+B hotkey-overlay-title="Restart an Application: Waybar"           { spawn-sh "pkill waybar; pkill kded6; waybar &"; }
