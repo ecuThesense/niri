@@ -18,5 +18,5 @@ if [[ "$sel" == '!'* ]]; then
   setsid -f "$TERMINAL" -e bash -c "$cmd" >/dev/null 2>&1
 else
   # GUI: detached
-  setsid -f bash -c "$sel" >/dev/null 2>&1
+  setsid -f bash -c "GDK_BACKEND=x11 $sel" >/dev/null 2>&1
 fi
