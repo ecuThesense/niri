@@ -328,10 +328,10 @@ transition_on_startup = true
     interval_seconds = 9000
 
     [wallpaper.default]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-yqj6xx_3840x2160.png"
+    path = "/home/ecuthesense/dwm/dwm/Wallpapers/glacial-blue-3840x2160-26358.jpg"
 
     [wallpaper.last]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-yqj6xx_3840x2160.png"
+    path = "/home/ecuthesense/dwm/dwm/Wallpapers/glacial-blue-3840x2160-26358.jpg"
 
     [wallpaper.monitor.DP-3]
     fill_color = "primary"
@@ -358,7 +358,7 @@ transition_on_startup = true
     path = "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-wy96zp_3840x2160.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/ecuthesense/dwm/dwm/Wallpapers/wallhaven-yqj6xx_3840x2160.png"
+    path = "/home/ecuthesense/dwm/dwm/Wallpapers/glacial-blue-3840x2160-26358.jpg"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"

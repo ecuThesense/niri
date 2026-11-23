@@ -136,20 +136,21 @@ switch-events {
     lid-close { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
 }
 
-// spawn-sh-at-startup "pkill kded6"
-spawn-at-startup "noctalia"
-spawn-at-startup "xwayland-satellite"
-// spawn-sh-at-startup "dbus-update-activation-environment --systemd --all"
 spawn-sh-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=niri && systemctl --user restart xdg-desktop-portal xdg-desktop-portal-gtk"
+spawn-at-startup "noctalia"
+spawn-at-startup "nm-applet" "--indicator"
+spawn-at-startup "nautilus" "--gapplication-service"
+spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
+
+// spawn-sh-at-startup "pkill kded6"
+// spawn-sh-at-startup "systemctl --user daemon-reload"
+// spawn-at-startup "xwayland-satellite"
+// spawn-sh-at-startup "dbus-update-activation-environment --systemd --all"
 // spawn-sh-at-startup "systemctl --user start hyprpolkitagent"
-spawn-sh-at-startup "systemctl --user daemon-reload"
 // spawn-sh-at-startup "systemctl --user restart xdg-desktop-portal xdg-desktop-portal-gtk"
 // spawn-at-startup "hyprpaper"
 // spawn-at-startup "hyprsunset"
 // spawn-at-startup "mako"
-spawn-at-startup "nm-applet" "--indicator"
-spawn-at-startup "nautilus" "--gapplication-service"
-spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
 // spawn-at-startup "vicinae" "server"
 // spawn-at-startup "waybar"
 hotkey-overlay {
